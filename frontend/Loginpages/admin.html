@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body{
+            background-color: var(--main-color);
+        }
+        :root{
+            --bg-color: #080808;
+            --second-bg-color: #131313;
+            --text-color: white;
+            --main-color: #00ffee;
+        }
+        .navbar{
+            background-color: rgb(172, 42, 42);
+          
+        }
+        .navbar-brand{
+            font-size: 30px;
+            color: white;
+        }
+        .nav-item a{
+            margin-left: 50px;
+            font-size: 25px;
+            
+        }
+        h1{
+            font-size: 50px;
+            font-weight: 100;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 40rem;
+            margin-top: 5rem;
+        }
+        h5{
+            font-size: 20px;
+            margin-top: 2rem;
+            margin-left: 33rem;
+            font-weight: 100;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        hr{
+            margin-top: 2rem;
+        }
+        h3{
+            font-size: 20px;
+            margin-top: 2rem;
+            margin-left: 35rem;
+            font-weight: 100;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .btn-1{
+            margin-top: 2rem;
+            margin-left: 42rem;
+        }
+        .footer{
+            margin-top: 85px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            padding: 40px 0;
+            background-color: var(--second-bg-color);
+        }
+        .footer .social-media{
+            text-align: center;
+            padding-bottom: 25px;
+            color: var(--main-color);
+        }
+        .footer .social-media a{
+            font-size: 25px;
+            color: var(--main-color);
+            border: 2px solid var(--main-color);
+            width: 42px;
+            height: 42px;
+            line-height: 42px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            margin: 0 10px;
+            transition: 0.4s ease-in-out;
+        }
+        .footer .social-media a:hover{
+            transform: scale(1.2)translateY(-10px);
+            background-color: var(--main-color);
+            color: black;
+            box-shadow: 0 0 25px var(--main-color);
+        }
+        .footer ul{
+            margin-top: -15px;
+            padding: 0;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        .footer ul li a{
+            color: white;
+            border-bottom: 3px solid transparent;
+            transition: 0.3s ease-in-out;
+        }
+        .footer ul li a:hover{
+            border-bottom: 3px solid yellow;
+        }
+        .footer ul li{
+            display: inline-block;
+            padding: 0 15px;
+        }
+        .footer .copy-right{
+            margin-top: 10px;
+            text-align: center;
+            font-size: 16px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Shri Gnanambica Degree College</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Admin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Employee</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Student</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <section>
+        <h1>Hello Admin</h1>
+        <h5>Welcome to Gnanambica College Management System</h5>
+        <hr>
+        <h3>You can access various features after Login/SignUp.</h3>
+        <div class="btn-1">
+            <button class="btn btn-primary btn-lg">SignUp</button>
+            <button class="btn btn-primary btn-lg">Login</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/shaik-albas-8467bb2b2/" target="_blank""><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://github.com/iamshaikalbaz" target="_blank"><i class='bx bxl-github' ></i></a>
+            <a href="https://x.com/ShaikAlbaz786" target="_blank""><i class='bx bxl-twitter' ></i></a>
+        </div>
+
+        <ul class="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#home">About Me</a></li>
+            <li><a href="#test">Testimonials</a></li>
+            <li><a href="#contact">Contct</a></li>
+        </ul>
+
+        <p class="copy-right">
+            &copy;Shaik Albaz | All Rights Reserved
+        </p>
+    </footer>
+</body>
+</html>
